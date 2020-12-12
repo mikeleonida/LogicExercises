@@ -1,3 +1,16 @@
+//**You  are  given  a  string  of  length  N.  Find  the  most  repeated  character  in  the  string.  If  many  characters  appear
+//same  number  of  times  find  the  smallest  one**
+//
+//**This exercise contains a class named RepeatedCharacter with the following static method:**
+//
+//      findRepeatedCharacter(String):Character  
+//  
+//- The input String to the method should be scanned for repeated characters and the most 
+//  repeated character should be returned.
+//- String will not contain digits
+//- If the input string is empty/null or it does not contain any repeated character, character 0 should be returned.
+//- characters will be in lowercase only
+
 package exercises;
 
 import java.util.Scanner;

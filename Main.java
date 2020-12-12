@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		// THIS FILE IS NOT NEEDED, JUST KEEPING IT FOR TESTING PURPOSES NOW AND LATER
 		// Exercise StudentNameSort
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter names and scores:");
