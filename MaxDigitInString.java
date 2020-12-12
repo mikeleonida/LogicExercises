@@ -1,3 +1,13 @@
+//**Given a String find the maximum digit within the String**
+//
+//**This exercise contains a class named MaxDigitInString with the following static method:**
+//
+//      getMaxDigit(String):int  
+//  
+//- The input String to the method should be scanned for digits and the maximum digit should be returned.
+//- Input String can contain alphanumeric character, spaces and special characters
+//- If the input string is empty/null or it does not contain any digits, -1 should be returned.
+
 package exercises;
 
 import java.util.Scanner;
