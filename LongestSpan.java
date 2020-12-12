@@ -1,3 +1,18 @@
+//**Given an integer array, the longest span of number needs to be found. If 
+//a number is repeated multiple times in an array, span is the number of elements between 
+//the first occurrence and the last occurrence of the number, inclusive of the numbers. 
+//
+//**This exercise contains a class named LongestSpan with the following static method:**
+//
+//      findLongestSpan(int[]):String  
+//  
+//     - Method should take integer array as input and return a String with the number and longest span 
+//		of a number separated by colon(:).
+//     - If two numbers have the same longest span, the larger number and its span should be returned
+//     - A single value has a span of 1.
+//     
+//    *Note: If the input array is null or empty, method should return "-1"* 
+    		
 package exercises;
 
 import java.util.Scanner;
@@ -13,6 +28,14 @@ public class LongestSpan {
 			numInts = scanner.nextInt();
 		} 
 		String[] userInput = scanner.nextLine().trim().split(" ");
+		
+		if (numInts <= 0 || (userInput.length<numInts) 
+				|| (userInput.length == 1 && numInts == 1 && (userInput[0].compareTo("")==0) ) ) {
+			System.out.println(-1);
+			scanner.close();
+			return;
+		}
+		
 		int[] lsArr = new int[numInts];
 		for (int i = 0; i < numInts; i++) {
 			lsArr[i] = Integer.parseInt(userInput[i]);

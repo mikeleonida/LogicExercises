@@ -35,7 +35,7 @@ public class LargestDifference {
 		}
 		String[] userInput = scanner.nextLine().trim().split(" ");
 
-		if (numInts == 0 || numInts == 1 || (userInput.length == 1) || (userInput.length<numInts)) {
+		if (numInts <= 1 || (userInput.length == 1) || (userInput.length<numInts)) {
 			System.out.println(-1);
 			scanner.close();
 			return;
