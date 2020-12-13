@@ -21,14 +21,14 @@ public class Exercise01StudentNameSort {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter names and scores:");
 
-		String[] namesAndScoresArr = scanner.nextLine().trim().replaceAll("\\s", "").split(";");
+		String[] namesAndScoresArr = scanner.nextLine().trim().replaceAll("\\s+", " ").split(";");
 		String[] names = new String[namesAndScoresArr.length];
 		int[] scores = new int[namesAndScoresArr.length];
 
 		for (int i = 0; i < namesAndScoresArr.length; i++) {
-			names[i] = namesAndScoresArr[i].split(":")[0];
+			names[i] = namesAndScoresArr[i].split(":")[0].trim();
 			try {
-				scores[i] = Integer.parseInt(namesAndScoresArr[i].split(":")[1]);
+				scores[i] = Integer.parseInt(namesAndScoresArr[i].split(":")[1].replaceAll("\\s+", ""));
 			} catch (Exception e) {
 				scores[i] = -1;
 			}
