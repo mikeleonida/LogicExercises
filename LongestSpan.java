@@ -27,7 +27,7 @@ public class LongestSpan {
 		if (scanner.hasNextInt()) {
 			numInts = scanner.nextInt();
 		} 
-		String[] userInput = scanner.nextLine().trim().split(" ");
+		String[] userInput = scanner.nextLine().trim().split("\\s+"); //.replaceAll("\t", " ").replaceAll("\\s+",  " ").split(" ");
 		
 		if (numInts <= 0 || (userInput.length<numInts) 
 				|| (userInput.length == 1 && numInts == 1 && (userInput[0].compareTo("")==0) ) ) {

@@ -35,7 +35,7 @@ public class RepeatedCharacter {
 	}
 
 	public static Character findRepeatedCharacter(String inputString) {
-		String input = inputString.replace(" ", "");
+		String input = inputString.replaceAll(" ", "").replaceAll("\t", "");
 		if (input == null || input.compareTo("") == 0) {
 			return '0';
 		}
